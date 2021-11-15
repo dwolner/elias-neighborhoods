@@ -1,0 +1,43 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Compass-Sans-Regular";
+  src: url('../public/fonts/CompassSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Compass-Serif-Regular";
+  src: url('../public/fonts/CompassSerif-Regular.ttf');
+}
+
+h1 {    
+    font-family: "Compass-Sans-Regular";
+    margin: 0;
+}
+h2 {    
+    font-family: "Compass-Sans-Regular";
+    margin: 0;
+}
+h3 {    
+    font-family: "Compass-Sans-Regular";
+    margin: 0;
+}
+h4 {    
+    font-family: "Compass-Sans-Regular";
+    margin: 0;
+}
+h5 {    
+    font-family: "Compass-Sans-Regular";
+    margin: 0;
+}
+h6 {    
+    font-family: "Compass-Sans-Regular";
+    margin: 0;
+}
+p {    
+    font-family: "Compass-Sans-Regular";
+
+}
