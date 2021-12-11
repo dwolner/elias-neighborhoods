@@ -10,14 +10,14 @@ export default function About() {
             <div className='flex flex-wrap justify-center items-start overflow-hidden p-4'>
                 <div className='w-full sm:w-1/4 mx-auto text-left'>
                     <Image
-                        src='/media/weston_house.jpeg' // Route of the image file
+                        src='/media/weston_house.jpg' // Route of the image file
                         height={500} // Desired size with correct aspect ratio
                         width={500} // Desired size with correct aspect ratio
                         alt='Your Name'
                         layout='responsive'
                     />
                 </div>
-                <div className='w-full sm:w-3/4 mx-auto text-left text-lg py-4 px-1 md:pl-4'>
+                <div className='w-full sm:w-3/4 mx-auto text-left text-lg py-4 px-2 md:pl-6'>
                     <p>{siteData.neighborhoodDescription}</p>
                     <br />
                     <h6>Interested in buying or selling in the {siteData.neighborhoodName} community?</h6>
@@ -28,7 +28,7 @@ export default function About() {
                 </div>
             </div>
             <div className='flex flex-wrap justify-center items-start overflow-hidden p-4'>
-                <div className='w-40 mx-auto text-center'>
+                <a className='w-40 mx-auto text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/richard-elias/'>
                     <div className='rounded-full overflow-hidden'>
                         <Image
                             src='/media/richard_square.jpg' // Route of the image file
@@ -38,12 +38,12 @@ export default function About() {
                             layout='responsive'
                         />
                     </div>
-                    <h6 className='my-2'>Richard Elias</h6>
-                </div>
-                <div className='w-40 mx-auto text-center'>
+                    <h6 className='my-2'>Richard</h6>
+                </a>
+                <a className='w-40 mx-auto text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/george-bukes/'>
                     <div className='rounded-full overflow-hidden'>
                         <Image
-                            src='/media/richard_square.jpg' // Route of the image file
+                            src='/media/george_square.jpg' // Route of the image file
                             height={500} // Desired size with correct aspect ratio
                             width={500} // Desired size with correct aspect ratio
                             alt='Your Name'
@@ -51,7 +51,7 @@ export default function About() {
                         />
                     </div>
                     <h6 className='my-2'>George</h6>
-                </div>
+                </a>
             </div>
         </SectionBlock>
     )
