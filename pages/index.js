@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Gallery from '../components/Gallery'
 import Map from '../components/Map'
+import ContactUs from '../components/ContactUs'
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <About />
             <Gallery />
             <Map />
+            <ContactUs />
         </PageBlock>
     )
 }

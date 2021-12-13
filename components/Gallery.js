@@ -49,44 +49,45 @@ export default function Hero() {
     }
 
     return (
-        <div className='flex'>
-            <div className='w-full flex justify-center items-center bg-gray-200 relative-position'>
-                <AnimatePresence initial={false} custom={direction}>
-                    <motion.img
-                        key={page}
-                        src={images[imageIndex]}
-                        custom={direction}
-                        variants={variants}
-                        initial='enter'
-                        animate='center'
-                        exit='exit'
-                        transition={{
-                            x: { type: 'spring', stiffness: 300, damping: 30 },
-                            opacity: { duration: 0.2 },
-                        }}
-                        drag='x'
-                        dragConstraints={{ left: 0, right: 0 }}
-                        dragElastic={1}
-                        onDragEnd={(e, { offset, velocity }) => {
-                            const swipe = swipePower(offset.x, velocity.x)
+        <div className='w-full bg-gray-200 relative flex justify-center items-center'>
+            <AnimatePresence initial={false} custom={direction}>
+                <motion.img
+                    key={page}
+                    src={images[imageIndex]}
+                    custom={direction}
+                    variants={variants}
+                    initial='enter'
+                    animate='center'
+                    exit='exit'
+                    transition={{
+                        x: { type: 'spring', stiffness: 300, damping: 30 },
+                        opacity: { duration: 0.2 },
+                    }}
+                    drag='x'
+                    dragConstraints={{ left: 0, right: 0 }}
+                    dragElastic={1}
+                    onDragEnd={(e, { offset, velocity }) => {
+                        const swipe = swipePower(offset.x, velocity.x)
 
-                            if (swipe < -swipeConfidenceThreshold) {
-                                paginate(1)
-                            } else if (swipe > swipeConfidenceThreshold) {
-                                paginate(-1)
-                            }
-                        }}
-                        style={{
-                            maxWidth: '900px'
-                        }}
-                    />
-                </AnimatePresence>
-                <div className='next' onClick={() => paginate(1)}>
-                    <ChevronRightIcon />
-                </div>
-                <div className='prev' onClick={() => paginate(-1)}>
-                    <ChevronLeftIcon />
-                </div>
+                        if (swipe < -swipeConfidenceThreshold) {
+                            paginate(1)
+                        } else if (swipe > swipeConfidenceThreshold) {
+                            paginate(-1)
+                        }
+                    }}
+                    style={{
+                        // maxWidth: '900px',
+                        maxHeight: '600px',
+                        objectFit: 'cover',
+                        width: '100%',
+                    }}
+                />
+            </AnimatePresence>
+            <div className='next' onClick={() => paginate(1)}>
+                <ChevronRightIcon />
+            </div>
+            <div className='prev' onClick={() => paginate(-1)}>
+                <ChevronLeftIcon />
             </div>
         </div>
     )

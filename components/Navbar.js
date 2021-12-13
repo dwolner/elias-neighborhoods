@@ -17,7 +17,7 @@ export default function Navbar() {
     }, [])
 
     return (
-        <div className='w-full mx-auto px-3 py-3 bg-black'>
+        <div className='w-full mx-auto px-3 py-3 bg-black h-full'>
             <div className='flex flex-wrap justify-between items-center'>
                 <div className='flex flex-1'>
                     <h1 className='text-gray-100'>
