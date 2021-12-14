@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/solid'
+import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/outline'
 import { wrap } from 'popmotion'
 
 const images = [

@@ -10,10 +10,10 @@ export default function Home() {
     return (
         <PageBlock>
             <Hero />
+            <ContactUs />
             <About />
             <Gallery />
             <Map />
-            <ContactUs />
         </PageBlock>
     )
 }

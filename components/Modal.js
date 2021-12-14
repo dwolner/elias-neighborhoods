@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Backdrop from './Backdrop'
+import { XIcon } from '@heroicons/react/outline'
 
 const dropIn = {
     hidden: {
@@ -25,8 +26,12 @@ const dropIn = {
 export default function Modal({ handleClose, children }) {
     return (
         <Backdrop onClick={handleClose}>
-            <motion.div onClick={(e) => e.stopPropagation()} className='modal orange-gradient' variants={dropIn} initial='hidden' animate='visible' exit='exit'>
-                <button onClick={handleClose}>Close</button>
+            <motion.div onClick={(e) => e.stopPropagation()} className='contactModal' variants={dropIn} initial='hidden' animate='visible' exit='exit'>
+                <div className='text-right'>
+                    <button className='w-6' onClick={handleClose}>
+                        <XIcon />
+                    </button>
+                </div>
                 {children}
             </motion.div>
         </Backdrop>

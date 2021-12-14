@@ -29,9 +29,9 @@ export default function Hero() {
             <video
                 loop
                 muted
-                autoPlay='true'
+                autoPlay={true}
                 style={{
-                    width: 'auto',
+                    width: '100%',
                     height: '100%',
                     position: 'absolute',
                     objectFit: 'cover',
@@ -43,12 +43,9 @@ export default function Hero() {
                 <source src='/media/weston_neighborhood_header_720p.mp4' type='video/mp4' />
             </video>
             <div className='w-full flex justify-center items-center bg-black bg-opacity-50'>
-                <div className='flex-1 p-4'>
-                    <h1 className='text-center text-4xl text-gray-100'>Welcome to the {siteData.neighborhoodName} Community!</h1>
-                    <div className='text-center'>
-                        <button className='bg-black text-gray-100 border border-gray-100 rounded-md my-2 py-2 px-4'>
-                            <h6>Get Started</h6>
-                        </button>
+                <div className='flex-1 p-4 text-center'>
+                    <h1 className='text-4xl text-gray-100'>Welcome to the {siteData.neighborhoodName} Community!</h1>
+                    <div className='w-40 m-auto'>
                         <OpenContactUsButton text='Get Started' />
                     </div>
                 </div>

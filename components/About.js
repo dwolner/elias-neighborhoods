@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import SectionBlock from './SectionBlock'
 import siteData from '@constants/data'
+import OpenContactUsButton from './OpenContactUsButton'
 
 export default function About() {
     return (
@@ -50,9 +51,9 @@ export default function About() {
                         </a>
                     </div>
                 </div>
-                <button className='w-full bg-black border border-gray-100 rounded-md my-2 p-2'>
-                    <h6>Contact Us!</h6>
-                </button>
+                <div className='px-10 flex-1'>
+                    <OpenContactUsButton text='Contact Us!' />
+                </div>
             </div>
         </SectionBlock>
     )
