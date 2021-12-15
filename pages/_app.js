@@ -7,7 +7,7 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
     return (
         <ReduxProvider store={store}>
-            <ThemeProvider defaultTheme='system' attribute='class'>
+            <ThemeProvider defaultTheme='dark' attribute='class'>
                 <Component {...pageProps} />
             </ThemeProvider>
         </ReduxProvider>

@@ -60,7 +60,7 @@ export default function PageBlock({ children, ...customMeta }) {
                 <div className='w-full fixed z-10 bg-white dark:bg-black'>
                     <Navbar />
                 </div>
-                <div className="pt-22">{children}</div>
+                <div className="pt-24">{children}</div>
                 <Footer />
             </main>
         </div>

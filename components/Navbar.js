@@ -19,7 +19,7 @@ export default function Navbar() {
     return (
         <div className='w-full mx-auto px-3 py-3 bg-black h-full'>
             <div className='flex flex-wrap justify-between items-center'>
-                <div className='flex flex-1 px-2'>
+                <div className='hidden md:flex flex-1 px-2'>
                     <h6 className='text-gray-100 text-sm'>
                         {siteData.neighborhoodName} Community - {siteData.city}, {siteData.zip}
                     </h6>
@@ -27,7 +27,7 @@ export default function Navbar() {
                 <div className='flex flex-1 justify-center px-2'>
                     <Image src='/media/logos/RichardElias_CompassLockupHorizontal-White.png' layout='intrinsic' width={225} height={75} alt='Richard Elias Compass Logo' />
                 </div>
-                <div className='flex flex-1 justify-end relative px-2'>
+                <div className='hidden md:flex flex-1 justify-end relative px-2'>
                     {siteData.socialLinks.map((social) => {
                         return (
                             <a href={social.link} target='_blank' key={social.link} className='col p-2 text-base font-normal text-gray-100'>
