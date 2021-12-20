@@ -55,6 +55,14 @@ export default function PageBlock({ children, ...customMeta }) {
                         content={meta.date}
                     />
                 )}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EKXHEF2DN"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || []
+                    function gtag(){dataLayer.push(arguments)}
+                    gtag('js', new Date())
+
+                    gtag('config', 'G-0EKXHEF2DN')
+                </script>
             </Head>
             <main className='dark:bg-black-900 w-full'>
                 <div className='w-full fixed z-10 bg-white dark:bg-black'>
