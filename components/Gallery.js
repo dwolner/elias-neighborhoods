@@ -55,7 +55,7 @@ export default function Hero() {
                     key={page}
                     src={images[imageIndex]}
                     custom={direction}
-                    variants={variants}
+                    // variants={variants}
                     initial='enter'
                     animate='center'
                     exit='exit'
