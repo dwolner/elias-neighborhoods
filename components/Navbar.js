@@ -21,11 +21,12 @@ export default function Navbar() {
             <div className='flex flex-wrap justify-between items-center'>
                 <div className='hidden md:flex flex-1 px-2'>
                     <h6 className='text-gray-100 text-sm'>
-                        {siteData.neighborhoodName} Community - {siteData.city}, {siteData.zip}
+                        {siteData.neighborhoodName} Community - {siteData.city} {siteData.zip}
                     </h6>
                 </div>
                 <div className='flex flex-1 justify-center px-2'>
-                    <Image src='/media/logos/RichardElias_CompassLockupHorizontal-White.png' layout='intrinsic' width={225} height={75} alt='Richard Elias Compass Logo' />
+                    {/* <Image src='/media/logos/RichardElias_CompassLockupHorizontal-White.png' layout='intrinsic' width={225} height={75} alt='Richard Elias Compass Logo' /> */}
+                    <h1 className='text-gray-100 text-4xl Compass-Serif-Regular uppercase'>{siteData.neighborhoodName.slice(0, 1)}</h1>
                 </div>
                 <div className='hidden md:flex flex-1 justify-end relative px-2'>
                     {siteData.socialLinks.map((social) => {

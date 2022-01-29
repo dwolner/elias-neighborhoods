@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
+import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import SectionBlock from './SectionBlock'
 import siteData from '@constants/data'
@@ -22,34 +22,36 @@ export default function About() {
                 <div className='w-full md:w-3/4 mx-auto text-left text-lg py-6 md:py-0 md:pl-6'>
                     <h3 className='text-gray-100 leading-tight'>{siteData.neighborhoodName} Community</h3>
                     <h3 className='text-gray-100 leading-tight'>
-                        {siteData.city}, {siteData.zip}
+                        {siteData.city} {siteData.zip}
                     </h3>
                     <h6 className='text-sm mt-6'>Community agents:</h6>
-                    <div className='flex flex-wrap justify-start items-start overflow-hidden py-4'>
-                        <a className='flex mr-6 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/richard-elias/'>
-                            <div className='w-20 rounded-full overflow-hidden'>
-                                <Image
-                                    src='/media/richard_square.jpg' // Route of the image file
-                                    height={200} // Desired size with correct aspect ratio
-                                    width={200} // Desired size with correct aspect ratio
-                                    alt='Your Name'
-                                    layout='responsive'
-                                />
-                            </div>
-                            <h6 className='m-4'>Richard</h6>
-                        </a>
-                        <a className='flex mr-6 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/george-bukes/'>
-                            <div className='w-20 rounded-full overflow-hidden'>
-                                <Image
-                                    src='/media/george_square.jpg' // Route of the image file
-                                    height={200} // Desired size with correct aspect ratio
-                                    width={200} // Desired size with correct aspect ratio
-                                    alt='Your Name'
-                                    layout='responsive'
-                                />
-                            </div>
-                            <h6 className='m-4'>George</h6>
-                        </a>
+                    <div className='flex flex-wrap justify-start items-start py-4'>
+                        <AnimatePresence>
+                            <motion.a className='flex mr-6 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/richard-elias/' whileHover={{ scale: 1.05 }}>
+                                <div className='w-20 rounded-full overflow-hidden'>
+                                    <Image
+                                        src='/media/richard_square.jpg' // Route of the image file
+                                        height={200} // Desired size with correct aspect ratio
+                                        width={200} // Desired size with correct aspect ratio
+                                        alt='Your Name'
+                                        layout='responsive'
+                                    />
+                                </div>
+                                <h6 className='m-4'>Richard</h6>
+                            </motion.a>
+                            <motion.a className='flex mr-6 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/george-bukes/' whileHover={{ scale: 1.05 }}>
+                                <div className='w-20 rounded-full overflow-hidden'>
+                                    <Image
+                                        src='/media/george_square.jpg' // Route of the image file
+                                        height={200} // Desired size with correct aspect ratio
+                                        width={200} // Desired size with correct aspect ratio
+                                        alt='Your Name'
+                                        layout='responsive'
+                                    />
+                                </div>
+                                <h6 className='m-4'>George</h6>
+                            </motion.a>
+                        </AnimatePresence>
                     </div>
                 </div>
                 <div className='w-full py-4'>
