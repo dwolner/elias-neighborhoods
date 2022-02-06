@@ -25,14 +25,16 @@ const dropIn = {
 
 export default function Modal({ handleClose, children }) {
     return (
-        <Backdrop onClick={handleClose}>
-            <motion.div onClick={(e) => e.stopPropagation()} className='contactModal' variants={dropIn} initial='hidden' animate='visible' exit='exit'>
-                <div className='text-right'>
-                    <button className='w-6' onClick={handleClose}>
-                        <XIcon color="black" />
-                    </button>
-                </div>
-                {children}
+        <Backdrop className='z-20' onClick={handleClose}>
+            <motion.div className='p-4'>
+                <motion.div onClick={(e) => e.stopPropagation()} className='modalContent' variants={dropIn} initial='hidden' animate='visible' exit='exit'>
+                    <div className='text-right'>
+                        <button className='w-6' onClick={handleClose}>
+                            <XIcon color="black" />
+                        </button>
+                    </div>
+                    {children}
+                </motion.div>
             </motion.div>
         </Backdrop>
     )
