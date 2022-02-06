@@ -16,7 +16,6 @@ export default function About() {
                         width={500} // Desired size with correct aspect ratio
                         alt='Your Name'
                         layout='responsive'
-                        maxWidth='600px'
                     />
                 </div>
                 <div className='w-full md:w-3/4 mx-auto text-left text-lg py-6 md:py-0 md:pl-6'>
@@ -27,7 +26,7 @@ export default function About() {
                     <h6 className='text-sm mt-6'>Community agents:</h6>
                     <div className='flex flex-wrap justify-start items-start py-4'>
                         <AnimatePresence>
-                            <motion.a className='flex mr-6 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/richard-elias/' whileHover={{ scale: 1.05 }}>
+                            <motion.a key="richard" className='flex mr-6 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/richard-elias/' whileHover={{ scale: 1.05 }}>
                                 <div className='w-20 rounded-full overflow-hidden'>
                                     <Image
                                         src='/media/richard_square.jpg' // Route of the image file
@@ -39,7 +38,7 @@ export default function About() {
                                 </div>
                                 <h6 className='m-4'>Richard</h6>
                             </motion.a>
-                            <motion.a className='flex mr-6 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/george-bukes/' whileHover={{ scale: 1.05 }}>
+                            <motion.a key="george" className='flex mr-6 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/george-bukes/' whileHover={{ scale: 1.05 }}>
                                 <div className='w-20 rounded-full overflow-hidden'>
                                     <Image
                                         src='/media/george_square.jpg' // Route of the image file

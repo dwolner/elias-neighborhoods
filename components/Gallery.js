@@ -84,10 +84,10 @@ export default function Hero() {
                 />
             </AnimatePresence>
             <div className='next' onClick={() => paginate(1)}>
-                <ChevronRightIcon />
+                <ChevronRightIcon color="black" />
             </div>
             <div className='prev' onClick={() => paginate(-1)}>
-                <ChevronLeftIcon />
+                <ChevronLeftIcon color="black" />
             </div>
         </div>
     )

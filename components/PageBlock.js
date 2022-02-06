@@ -56,7 +56,7 @@ export default function PageBlock({ children, ...customMeta }) {
                 <div className='w-full fixed z-10 bg-white dark:bg-black'>
                     <Navbar />
                 </div>
-                <div className='pt-18'>{children}</div>
+                <div style={{ paddingTop: '4.5rem' }}>{children}</div>
                 <Footer />
             </main>
         </div>

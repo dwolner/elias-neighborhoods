@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import SectionBlock from './SectionBlock'
 
-export default function About() {
+export default function Listings() {
     const listings = [
         {
             address: '9014 Hightail Drive',
@@ -39,8 +39,8 @@ export default function About() {
                 <AnimatePresence>
                     {listings.map((item) => {
                         return (
-                            <motion.a className='w-full sm:w-1/2 md:w-1/3 p-4' href={item.url} target='_blank' whileHover={{ scale: 1.05 }}>
-                                <div className='relative overflow-hidden'>
+                            <motion.a key={item.address} className='w-full sm:w-1/2 md:w-1/3 p-4' href={item.url} target='_blank' whileHover={{ scale: 1.05 }}>
+                                <div className='relative overflow-hidden z-0'>
                                     <div className='ribbon z-10 text-center'>
                                         <h6 className='p-1 mt-1 text-sm'>SOLD {item.soldDate}</h6>
                                     </div>
@@ -50,7 +50,6 @@ export default function About() {
                                         width={640} // Desired size with correct aspect ratio
                                         alt={item.imageFilename}
                                         layout='responsive'
-                                        maxWidth='600px'
                                     />
                                     <div className='absolute bottom-0 w-full p-4 caption-gradient'>
                                         <h5 className='mt-4'>{item.price}</h5>

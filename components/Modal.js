@@ -29,7 +29,7 @@ export default function Modal({ handleClose, children }) {
             <motion.div onClick={(e) => e.stopPropagation()} className='contactModal' variants={dropIn} initial='hidden' animate='visible' exit='exit'>
                 <div className='text-right'>
                     <button className='w-6' onClick={handleClose}>
-                        <XIcon />
+                        <XIcon color="black" />
                     </button>
                 </div>
                 {children}

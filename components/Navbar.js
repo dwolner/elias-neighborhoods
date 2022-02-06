@@ -8,16 +8,17 @@ import { SunIcon, MoonIcon } from '@heroicons/react/outline'
 
 export default function Navbar() {
     const router = useRouter()
-    console.log(router.asPath)
+    // console.log(router.asPath)
     const { theme, setTheme } = useTheme()
     const [mounted, setMounted] = useState(false)
-
+    
     useEffect(() => {
         setMounted(true)
+        setTheme('dark')
     }, [])
 
     return (
-        <div className='w-full mx-auto px-3 py-3 bg-black h-full'>
+        <div className='w-full mx-auto px-3 py-3 bg-black h-full z-20'>
             <div className='flex flex-wrap justify-between items-center'>
                 <div className='flex px-2 pt-2'>
                     <h1 className='text-gray-100 text-4xl Compass-Serif-Regular uppercase'>{siteData.neighborhoodName.slice(0, 1)}</h1>
@@ -38,9 +39,9 @@ export default function Navbar() {
                             </a>
                         )
                     })}
-                    <button aria-label='Toggle Dark Mode' type='button' className='w-10 h-10 p-3 rounded focus:outline-none' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+                    {/* <button aria-label='Toggle Dark Mode' type='button' className='w-10 h-10 p-3 rounded focus:outline-none' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
                         {mounted && (theme === 'dark' ? <SunIcon /> : <MoonIcon />)}
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>

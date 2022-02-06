@@ -36,12 +36,12 @@ export default function ContactUs() {
         >
             {contactModalVisible && (
                 <Modal handleClose={() => dispatch({ type: TOGGLE_CONTACT_MODAL })}>
-                    <div className='px-4'>
+                    <div className='px-4 text-black'>
                         <h6 className='uppercase'>Weston Community</h6>
                         <h1 className='Compass-Serif-Regular'>Contact</h1>
                         <div className='border-b-2'></div>
                     </div>
-                    <div className='px-2 py-4 flex flex-wrap'>
+                    <div className='px-2 py-4 flex flex-wrap text-black'>
                         {formInputs.map((inputObj) => (
                             <div className='w-full md:w-1/2 p-2'>
                                 <input
