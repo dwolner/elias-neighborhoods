@@ -10,7 +10,7 @@ export default function Listings() {
             address2: 'Santee, CA 92071',
             price: '$880,000',
             soldDate: '11/21/20',
-            imageFilename: '9014hightail.jpg',
+            imageFilename: '9014hightail.webp',
             url: 'https://www.compass.com/listing/9014-hightail-drive-santee-ca-92071/631933008752205817/',
         },
         {
@@ -18,7 +18,7 @@ export default function Listings() {
             address2: 'Santee, CA 92071',
             price: '$975,000',
             soldDate: '5/24/21',
-            imageFilename: '8869trailridge.jpg',
+            imageFilename: '8869trailridge.webp',
             url: 'https://www.compass.com/listing/8869-trailridge-avenue-santee-ca-92071/784069718392897657/',
         },
         {
@@ -26,12 +26,12 @@ export default function Listings() {
             address2: 'Santee, CA 92071',
             price: '$1,100,000',
             soldDate: '9/24/21',
-            imageFilename: '8860hightail.jpg',
+            imageFilename: '8860hightail.webp',
             url: 'https://www.compass.com/listing/8860-hightail-drive-santee-ca-92071/862933980860371145/',
         },
     ]
     return (
-        <SectionBlock customClass='lg:py-8 bg-topo text-gray-100'>
+        <SectionBlock customClass='lg:py-8 text-gray-100'>
             <div className='flex flex-wrap justify-center items-start overflow-hidden px-4 py-8'>
                 <div className='w-full px-4'>
                     <h6>Recent Listings</h6>

@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/outline'
 import { wrap } from 'popmotion'
 
 const images = [
-    '/media/neighborhood_selects/DSC05833.jpg',
-    '/media/neighborhood_selects/DSC05848.jpg',
-    '/media/neighborhood_selects/DSC05858.jpg',
-    '/media/neighborhood_selects/DSC05871.jpg',
-    '/media/neighborhood_selects/DSC05875.jpg',
-    '/media/neighborhood_selects/DSC05895.jpg',
-    '/media/neighborhood_selects/DSC05921.jpg',
-    '/media/neighborhood_selects/DSC05925.jpg',
-    '/media/neighborhood_selects/DSC05928.jpg',
+    '/media/neighborhood_selects/DSC05833.webp',
+    '/media/neighborhood_selects/DSC05848.webp',
+    '/media/neighborhood_selects/DSC05858.webp',
+    '/media/neighborhood_selects/DSC05871.webp',
+    '/media/neighborhood_selects/DSC05875.webp',
+    '/media/neighborhood_selects/DSC05895.webp',
+    '/media/neighborhood_selects/DSC05921.webp',
+    '/media/neighborhood_selects/DSC05925.webp',
+    '/media/neighborhood_selects/DSC05928.webp',
 ]
 const variants = {
     enter: (direction) => {
@@ -51,9 +52,8 @@ export default function Hero() {
     return (
         <div className='w-full bg-gray-200 relative flex justify-center items-center'>
             <AnimatePresence initial={false} custom={direction}>
-                <motion.img
+                <motion.div
                     key={page}
-                    src={images[imageIndex]}
                     custom={direction}
                     // variants={variants}
                     initial='enter'
@@ -78,10 +78,19 @@ export default function Hero() {
                     style={{
                         // maxWidth: '900px',
                         maxHeight: '600px',
-                        objectFit: 'cover',
                         width: '100%',
+                        overflow: 'hidden'
                     }}
-                />
+                >
+                    <Image
+                        className='galleryImage'
+                        src={images[imageIndex]}
+                        height={1066} // Desired size with correct aspect ratio
+                        width={1600} // Desired size with correct aspect ratio
+                        alt={images[imageIndex]}
+                        layout='responsive'
+                    />
+                </motion.div>
             </AnimatePresence>
             <div className='next' onClick={() => paginate(1)}>
                 <ChevronRightIcon color="black" />

@@ -14,9 +14,9 @@ export default function Home() {
             <Hero />
             <ContactUs />
             <About />
+            <Gallery />
             <Listings />
             <Videos />
-            <Gallery />
             <Map />
         </PageBlock>
     )

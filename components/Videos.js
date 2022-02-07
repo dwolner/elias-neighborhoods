@@ -21,26 +21,26 @@ export default function Videos() {
         {
             title: 'Likely To Sell',
             videoFilename: '01_likely_to_sell.mp4',
-            videoCoverImage: '01_likely_to_sell.png'
+            videoCoverImage: '01_likely_to_sell.webp'
         },
         {
             title: 'Seller Process',
             videoFilename: '02_seller_process.mp4',
-            videoCoverImage: '02_seller_process.png'
+            videoCoverImage: '02_seller_process.webp'
         },
         {
             title: 'Seller Tips',
             videoFilename: '03_seller_tips.mp4',
-            videoCoverImage: '03_seller_tips.png'
+            videoCoverImage: '03_seller_tips.webp'
         },
         {
             title: 'Compass For Sellers',
             videoFilename: '04_compass_for_sellers.mp4',
-            videoCoverImage: '04_compass_for_sellers.png'
+            videoCoverImage: '04_compass_for_sellers.webp'
         },
     ]
     return (
-        <SectionBlock customClass='lg:py-8 text-gray-100'>
+        <SectionBlock customClass='lg:py-8 bg-black text-gray-100'>
             <div className='flex flex-wrap justify-center items-start overflow-hidden px-4 py-8'>
                 <div className='w-full px-4'>
                     <h6>Relevant Videos</h6>

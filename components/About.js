@@ -7,11 +7,11 @@ import OpenContactUsButton from './OpenContactUsButton'
 
 export default function About() {
     return (
-        <SectionBlock customClass='lg:py-8 bg-black text-gray-100'>
+        <SectionBlock customClass='lg:py-8 bg-topo text-gray-100'>
             <div className='flex flex-wrap justify-center items-start overflow-hidden p-8'>
                 <div className='w-full md:w-1/4 mx-auto text-left'>
                     <Image
-                        src='/media/weston_house.jpg' // Route of the image file
+                        src='/media/weston_house.webp' // Route of the image file
                         height={500} // Desired size with correct aspect ratio
                         width={500} // Desired size with correct aspect ratio
                         alt='Your Name'
@@ -29,7 +29,7 @@ export default function About() {
                             <motion.a key="richard" className='flex mr-6 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/richard-elias/' whileHover={{ scale: 1.05 }}>
                                 <div className='w-20 rounded-full overflow-hidden'>
                                     <Image
-                                        src='/media/richard_square.jpg' // Route of the image file
+                                        src='/media/richard_square.webp' // Route of the image file
                                         height={200} // Desired size with correct aspect ratio
                                         width={200} // Desired size with correct aspect ratio
                                         alt='Your Name'
@@ -41,7 +41,7 @@ export default function About() {
                             <motion.a key="george" className='flex mr-6 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/george-bukes/' whileHover={{ scale: 1.05 }}>
                                 <div className='w-20 rounded-full overflow-hidden'>
                                     <Image
-                                        src='/media/george_square.jpg' // Route of the image file
+                                        src='/media/george_square.webp' // Route of the image file
                                         height={200} // Desired size with correct aspect ratio
                                         width={200} // Desired size with correct aspect ratio
                                         alt='Your Name'
