@@ -43,11 +43,11 @@ export default function ContactUs() {
                 <Modal handleClose={() => dispatch({ type: TOGGLE_CONTACT_MODAL })}>
                     <div className='px-4 text-black'>
                         <h6 className='uppercase'>Weston Community</h6>
-                        <h1 className='Compass-Serif-Regular'>Home Digest</h1>
+                        <h1 className='Compass-Serif-Regular' style={{lineHeight: '4.5rem'}}>Home Digest</h1>
                         <div className='border-b-2'></div>
-                        <p style={{margin: '2rem 0 0'}}>Sign up for our free Home Digest tool to recieve info on community home values:</p>
+                        <p style={{margin: '2rem 0 0'}}>Sign up for our free Home Digest tool to recieve info on community home values.</p>
                     </div>
-                    <div id='homebot_homeowner' style={{ minWidth: '500px' }}></div>
+                    <div id='homebot_homeowner'></div>
                     {/* <div className='px-2 py-4 flex flex-wrap text-black'>
                         {formInputs.map((inputObj) => (
                             <div className='w-full md:w-1/2 p-2'>
