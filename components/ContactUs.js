@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { motion, AnimatePresence } from 'framer-motion'
 import { TOGGLE_CONTACT_MODAL } from '../actions'
@@ -22,6 +23,10 @@ export default function ContactUs() {
     }]
     const inquiryTypes = ['General', 'Buying', 'Selling', 'Concierge', 'Private Exclusive', 'Sellers Home Digest', 'Buyers Home Digest', 'Other']
 
+    useEffect(() => {
+        window.Homebot('#homebot_homeowner', 'c0d2a19b3b4f288e7c2950d75a11300eb366cccc30e6aba3')
+    })
+
     return (
         <AnimatePresence
             // Disable any initial animations on children that
@@ -38,10 +43,12 @@ export default function ContactUs() {
                 <Modal handleClose={() => dispatch({ type: TOGGLE_CONTACT_MODAL })}>
                     <div className='px-4 text-black'>
                         <h6 className='uppercase'>Weston Community</h6>
-                        <h1 className='Compass-Serif-Regular'>Contact</h1>
+                        <h1 className='Compass-Serif-Regular'>Home Digest</h1>
                         <div className='border-b-2'></div>
+                        <p style={{margin: '2rem 0 0'}}>Sign up for our free Home Digest tool to recieve info on community home values:</p>
                     </div>
-                    <div className='px-2 py-4 flex flex-wrap text-black'>
+                    <div id='homebot_homeowner' style={{ minWidth: '500px' }}></div>
+                    {/* <div className='px-2 py-4 flex flex-wrap text-black'>
                         {formInputs.map((inputObj) => (
                             <div className='w-full md:w-1/2 p-2'>
                                 <input
@@ -90,7 +97,7 @@ export default function ContactUs() {
                                 <h6 className='uppercase'>Reset</h6>
                             </button>
                         </div>
-                    </div>
+                    </div> */}
                 </Modal>
             )}
         </AnimatePresence>

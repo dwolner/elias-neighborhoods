@@ -71,7 +71,7 @@ p {
 }
 
 .modalContent {
-    width: clamp(50%,700px,90%);
+    /* width: clamp(50%,700px,90%); */
     /* height: min(50%,300px); */
     margin: auto;
     padding: 1rem;

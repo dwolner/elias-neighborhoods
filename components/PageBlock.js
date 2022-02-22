@@ -51,6 +51,11 @@ export default function PageBlock({ children, ...customMeta }) {
                         `,
                     }}
                 />
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `(function (h,b) { var w = window, d = document, s = 'script', x, y; w['__hb_namespace'] = h; w[h] = w[h] || function () { (w[h].q=w[h].q||[]).push(arguments) }; y = d.createElement(s); x = d.getElementsByTagName(s)[0]; y.async = 1; y.src = b; x.parentNode.insertBefore(y,x) })('Homebot','https://embed.homebotapp.com/lgw/v1/widget.js');`
+                    }}
+                />
             </Head>
             <main className='dark:bg-black-900 w-full'>
                 <div className='w-full fixed z-10 bg-white dark:bg-black'>
