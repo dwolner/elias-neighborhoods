@@ -77,26 +77,27 @@ export default function Hero() {
                     }}
                     style={{
                         // maxWidth: '900px',
-                        maxHeight: '600px',
+                        height: '600px',
                         width: '100%',
-                        overflow: 'hidden'
+                        overflow: 'hidden',
                     }}
                 >
-                    <Image
+                    {/* <Image
                         className='galleryImage'
                         src={images[imageIndex]}
                         height={1066} // Desired size with correct aspect ratio
                         width={1600} // Desired size with correct aspect ratio
                         alt={images[imageIndex]}
-                        layout='responsive'
-                    />
+                        layout=''
+                    /> */}
+                    <img className='galleryImage' src={images[imageIndex]} alt={images[imageIndex]} />
                 </motion.div>
             </AnimatePresence>
             <div className='next' onClick={() => paginate(1)}>
-                <ChevronRightIcon color="black" />
+                <ChevronRightIcon color='black' />
             </div>
             <div className='prev' onClick={() => paginate(-1)}>
-                <ChevronLeftIcon color="black" />
+                <ChevronLeftIcon color='black' />
             </div>
         </div>
     )
