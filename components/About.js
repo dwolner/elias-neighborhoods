@@ -58,7 +58,7 @@ export default function About() {
                 </div>
                 <div className='flex-1 border-t-2 pt-8'>
                     <h6>Interested in buying or selling in the {siteData.neighborhoodName} community?</h6>
-                    <OpenContactUsButton text='Contact Us!' />
+                    <OpenContactUsButton text='Get Started!' />
                 </div>
             </div>
         </SectionBlock>
