@@ -50,7 +50,7 @@ export default function Hero() {
     }
 
     return (
-        <div className='w-full bg-gray-200 relative flex justify-center items-center'>
+        <div className='w-full bg-gray-900 relative flex justify-center items-center'>
             <AnimatePresence initial={false} custom={direction}>
                 <motion.div
                     key={page}
