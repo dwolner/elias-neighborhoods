@@ -42,7 +42,7 @@ export default function Hero() {
             >
                 <source src='/media/weston_neighborhood_header_720p.mp4' type='video/mp4' />
             </video>
-            <div className='w-full flex justify-center items-center bg-black bg-opacity-50'>
+            <div className='w-full flex justify-center items-center bg-black bg-opacity-20'>
                 <div className='flex-1 p-4 text-center'>
                     <h1 className='text-4xl text-gray-100'>Welcome to the {siteData.neighborhoodName} Community!</h1>
                     <div className='w-40 m-auto'>
