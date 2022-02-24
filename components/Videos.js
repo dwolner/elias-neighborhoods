@@ -48,7 +48,7 @@ export default function Videos() {
                 <AnimatePresence>
                     {listings.map((item) => {
                         return (
-                            <motion.a key={item.title} className='w-full sm:w-1/2 md:w-1/4 p-2' whileHover={{ scale: 1.05 }} onClick={e => {
+                            <motion.a key={item.title} className='w-full sm:w-1/2 md:w-1/4 p-1' whileHover={{ scale: 1.05 }} onClick={e => {
                                 setSelectedVideoData(item)
                                 dispatch({
                                     type: TOGGLE_VIDEO_MODAL
@@ -56,14 +56,10 @@ export default function Videos() {
                             }}>
                                 <div className='relative overflow-hidden z-0'>
                                     <Image
-                                        src = {
-                                            `/media/videoCoverImage/${item.videoCoverImage}`
-                                        }
+                                        src={`/media/videoCoverImage/${item.videoCoverImage}`}
                                         height={640} // Desired size with correct aspect ratio
                                         width={640} // Desired size with correct aspect ratio
-                                        alt = {
-                                            item.videoCoverImage
-                                        }
+                                        alt={item.videoCoverImage}
                                         layout='responsive'
                                     />
                                     {/* <div className='absolute bottom-0 w-full p-4 caption-gradient'>
