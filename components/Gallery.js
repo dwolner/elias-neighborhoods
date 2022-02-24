@@ -7,7 +7,7 @@ import { wrap } from 'popmotion'
 const images = [
     '/media/neighborhood_selects/DSC05833.webp',
     '/media/neighborhood_selects/DSC05848.webp',
-    '/media/neighborhood_selects/DSC05858.webp',
+    '/media/neighborhood_selects/DSC05853.webp',
     '/media/neighborhood_selects/DSC05871.webp',
     '/media/neighborhood_selects/DSC05875.webp',
     '/media/neighborhood_selects/DSC05895.webp',
