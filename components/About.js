@@ -11,7 +11,7 @@ export default function About() {
             <div className='flex flex-wrap justify-center items-start overflow-hidden p-8'>
                 <div className='w-full md:w-1/4 mx-auto text-left'>
                     <Image
-                        src='/media/weston_house.webp' // Route of the image file
+                        src='/media/DSC05875.webp' // Route of the image file
                         height={500} // Desired size with correct aspect ratio
                         width={500} // Desired size with correct aspect ratio
                         alt='Your Name'
@@ -26,7 +26,7 @@ export default function About() {
                     <h6 className='text-sm mt-6'>Community agents:</h6>
                     <div className='flex flex-wrap justify-start items-start py-4'>
                         <AnimatePresence>
-                            <motion.a key="richard" className='flex mr-6 mt-2 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/richard-elias/' whileHover={{ scale: 1.05 }}>
+                            <motion.a key='richard' className='flex mr-6 mt-2 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/richard-elias/' whileHover={{ scale: 1.05 }}>
                                 <div className='w-20 rounded-full overflow-hidden'>
                                     <Image
                                         src='/media/richard_square.webp' // Route of the image file
@@ -38,7 +38,7 @@ export default function About() {
                                 </div>
                                 <h6 className='m-4'>Richard</h6>
                             </motion.a>
-                            <motion.a key="george" className='flex mr-6 mt-2 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/george-bukes/' whileHover={{ scale: 1.05 }}>
+                            <motion.a key='george' className='flex mr-6 mt-2 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/george-bukes/' whileHover={{ scale: 1.05 }}>
                                 <div className='w-20 rounded-full overflow-hidden'>
                                     <Image
                                         src='/media/george_square.webp' // Route of the image file
