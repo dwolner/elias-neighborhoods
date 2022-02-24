@@ -73,7 +73,7 @@ p {
 .modalContent {
     /* width: clamp(50%,700px,90%); */
     /* height: min(50%,300px); */
-    margin: auto;
+    margin: 100px auto auto;
     padding: 1rem;
     border-radius: .25rem;
     flex-direction: column;

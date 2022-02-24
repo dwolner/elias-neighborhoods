@@ -83,7 +83,7 @@ export default function Videos() {
                                 <div className='border-b-2'></div>
                             </div>
                             <div className='px-2 py-4 flex flex-wrap'>
-                                <video autoPlay playsInline controls muted loop width="100%">
+                                <video autoPlay playsInline controls muted loop width="100%" style={{ maxHeight: 'calc(60vh - 70px)' }}>
                                     <source src={`/media/videos/${selectedVideoData.videoFilename}`} type="video/mp4"></source>
                                 </video>
                             </div>
