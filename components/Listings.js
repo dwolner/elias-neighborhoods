@@ -17,6 +17,7 @@ export default function Listings() {
             address: '8869 Trailridge Avenue',
             address2: 'Santee, CA 92071',
             price: '$975,000',
+            overAskingPrice: 5,
             soldDate: '5/24/21',
             imageFilename: '8869trailridge.webp',
             url: 'https://www.compass.com/listing/8869-trailridge-avenue-santee-ca-92071/784069718392897657/',
@@ -25,6 +26,7 @@ export default function Listings() {
             address: '8860 Hightail Drive',
             address2: 'Santee, CA 92071',
             price: '$1,100,000',
+            overAskingPrice: 2,
             soldDate: '9/24/21',
             imageFilename: '8860hightail.webp',
             url: 'https://www.compass.com/listing/8860-hightail-drive-santee-ca-92071/862933980860371145/',
@@ -42,7 +44,7 @@ export default function Listings() {
                             <motion.a key={item.address} className='w-full sm:w-1/2 md:w-1/3 p-4' href={item.url} target='_blank' whileHover={{ scale: 1.05 }}>
                                 <div className='relative overflow-hidden z-0'>
                                     <div className='ribbon z-10 text-center'>
-                                        <h6 className='p-1 mt-1 text-sm'>SOLD {item.soldDate}</h6>
+                                        <h6 className='p-1 mt-1 text-sm'>{item.overAskingPrice ? `${item.overAskingPrice}% over asking` : `SOLD ${item.soldDate}`}</h6>
                                     </div>
                                     <Image
                                         src={`/media/listings/${item.imageFilename}`}
