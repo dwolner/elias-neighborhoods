@@ -11,7 +11,7 @@ export default function PageBlock({ children, ...customMeta }) {
     const meta = {
         title: `${siteData.neighborhoodName} Community - ${siteData.city} ${siteData.zip}`,
         description: siteData.neighborhoodDescription,
-        image: '/favicon.png',
+        image: '/media/favicon.png',
         type: 'website',
         ...customMeta,
     }
@@ -21,12 +21,13 @@ export default function PageBlock({ children, ...customMeta }) {
                 <title>{meta.title}</title>
                 <meta name='robots' content='follow, index' />
                 <meta content={meta.description} name='description' />
-                <meta property='og:url' content={`https://danwolner.com${router.asPath}`} />
-                <link rel='canonical' href={`https://danwolner.com${router.asPath}`} />
+                <meta property='og:url' content={`${siteData.domain}${router.asPath}`} />
+                <link rel='canonical' href={`${siteData.domain}${router.asPath}`} />
                 <link rel='preconnect' href='https://fonts.googleapis.com' />
                 <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
                 <link href='https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap' rel='stylesheet' />
-                <link rel='shortcut icon' href='/media/DW_logo_fav_128.png' />
+                <link rel='shortcut icon' href='/media/favicon.png' />
+                <link rel="icon" type="image/png" href="/media/favicon.png" />
                 <meta property='og:type' content={meta.type} />
                 <meta property='og:site_name' content='Daniel Wolner' />
                 <meta property='og:description' content={meta.description} />
