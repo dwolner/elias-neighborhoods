@@ -11,7 +11,7 @@ export default function PageBlock({ children, ...customMeta }) {
     const meta = {
         title: `${siteData.neighborhoodName} Community - ${siteData.city} ${siteData.zip}`,
         description: siteData.neighborhoodDescription,
-        image: '/media/favicon.png',
+        image: '/media/DSC05875.webp',
         type: 'website',
         ...customMeta,
     }
