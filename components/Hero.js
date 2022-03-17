@@ -47,6 +47,7 @@ export default function Hero() {
                     <h1 className='text-4xl text-gray-100'>Welcome to the</h1>
                     <h1 className='text-6xl text-gray-100 my-4'>{siteData.neighborhoodName} Community!</h1>
                     <div className='w-40 m-auto'>
+                    <h6 style={{ fontSize: '1rem' }}>Click here to learn the value of your home:</h6>
                         <OpenContactUsButton text='Get Started' />
                     </div>
                 </div>

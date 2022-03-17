@@ -66,9 +66,9 @@ export default function About() {
                 <div className='w-full py-4'>
                     <p className='py-4'>{siteData.neighborhoodDescription}</p>
                 </div>
-                <div className='flex-1 border-t-2 pt-8'>
+                <div className='flex-1 border-t-2 pt-8 text-center'>
                     <h6>Interested in buying or selling in the {siteData.neighborhoodName} community?</h6>
-                    <OpenContactUsButton text='Get Started!' />
+                    <OpenContactUsButton text='Click here to learn the value of your home!' />
                 </div>
             </div>
         </SectionBlock>

@@ -41,11 +41,11 @@ export default function ContactUs() {
         >
             {contactModalVisible && (
                 <Modal handleClose={() => dispatch({ type: TOGGLE_CONTACT_MODAL })}>
-                    <div className='px-4 text-black'>
+                    <div className='px-4 text-black' style={{ maxWidth: '500px' }}>
                         <h6 className='uppercase'>Weston Community</h6>
                         <h1 className='Compass-Serif-Regular' style={{lineHeight: '4.5rem'}}>Home Digest</h1>
                         <div className='border-b-2'></div>
-                        <p style={{margin: '2rem 0 0'}}>Sign up for our free Home Digest tool to recieve info on community home values.</p>
+                        <p className='text-center mt-4 italic'>Sign up for our free Home Digest tool to receive home evaluations backed by your local neighborhood experts.</p>
                     </div>
                     <div id='homebot_homeowner'></div>
                     {/* <div className='px-2 py-4 flex flex-wrap text-black'>
