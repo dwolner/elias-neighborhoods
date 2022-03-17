@@ -5,15 +5,22 @@ import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/outline'
 import { wrap } from 'popmotion'
 
 const images = [
-    '/media/neighborhood_selects/DSC05833.webp',
-    '/media/neighborhood_selects/DSC05848.webp',
-    '/media/neighborhood_selects/DSC05853.webp',
-    '/media/neighborhood_selects/DSC05871.webp',
-    '/media/neighborhood_selects/DSC05875.webp',
-    '/media/neighborhood_selects/DSC05895.webp',
-    '/media/neighborhood_selects/DSC05921.webp',
-    '/media/neighborhood_selects/DSC05925.webp',
-    '/media/neighborhood_selects/DSC05928.webp',
+    '/media/neighborhood_selects/weston_community_photo_1.webp',
+    // '/media/neighborhood_selects/weston_community_photo_2.webp',
+    '/media/neighborhood_selects/weston_community_photo_3.webp',
+    // '/media/neighborhood_selects/weston_community_photo_4.webp',
+    '/media/neighborhood_selects/weston_community_photo_5.webp',
+    // '/media/neighborhood_selects/weston_community_photo_6.webp',
+    '/media/neighborhood_selects/weston_community_photo_7.webp',
+    // '/media/neighborhood_selects/weston_community_photo_8.webp',
+    '/media/neighborhood_selects/weston_community_photo_9.webp',
+    '/media/neighborhood_selects/weston_community_photo_10.webp',
+    // '/media/neighborhood_selects/weston_community_photo_11.webp',
+    '/media/neighborhood_selects/weston_community_photo_12.webp',
+    '/media/neighborhood_selects/weston_community_photo_13.webp',
+    '/media/neighborhood_selects/weston_community_photo_14.webp',
+    '/media/neighborhood_selects/weston_community_photo_15.webp',
+    '/media/neighborhood_selects/weston_community_photo_16.webp',
 ]
 const variants = {
     enter: (direction) => {
@@ -94,10 +101,10 @@ export default function Hero() {
                 </motion.div>
             </AnimatePresence>
             <div className='next' onClick={() => paginate(1)}>
-                <ChevronRightIcon color='black' />
+                <ChevronRightIcon color='black' size={16} />
             </div>
             <div className='prev' onClick={() => paginate(-1)}>
-                <ChevronLeftIcon color='black' />
+                <ChevronLeftIcon color='black' size={16} />
             </div>
         </div>
     )

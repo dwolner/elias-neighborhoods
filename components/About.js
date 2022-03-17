@@ -26,7 +26,7 @@ export default function About() {
                     <h6 className='text-sm mt-6'>Community agents:</h6>
                     <div className='flex flex-wrap justify-start items-start py-4'>
                         <AnimatePresence>
-                            <motion.a key='richard' className='flex mr-6 mt-2 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/richard-elias/' whileHover={{ scale: 1.05 }}>
+                            <motion.a key='richard' className='flex mr-6 mt-2 items-center text-left cursor-pointer' target='_blank' href='https://www.compass.com/agents/richard-elias/' whileHover={{ scale: 1.05 }}>
                                 <div className='w-20 rounded-full overflow-hidden'>
                                     <Image
                                         src='/media/richard_square.webp' // Route of the image file
@@ -36,9 +36,14 @@ export default function About() {
                                         layout='responsive'
                                     />
                                 </div>
-                                <h6 className='m-4'>Richard</h6>
+                                <div>
+                                    <h6 className='mx-2 text-md'>Richard</h6>
+                                    <h6 className='mx-2 text-sm'>619-672-2020</h6>
+                                    <h6 className='mx-2 text-sm'>richard.elias@compass.com</h6>
+                                    <h6 className='mx-2 text-sm'>DRE 01104411</h6>
+                                </div>
                             </motion.a>
-                            <motion.a key='george' className='flex mr-6 mt-2 items-center text-center cursor-pointer' target='_blank' href='https://www.compass.com/agents/george-bukes/' whileHover={{ scale: 1.05 }}>
+                            <motion.a key='george' className='flex mr-6 mt-2 items-center text-left cursor-pointer' target='_blank' href='https://www.compass.com/agents/george-bukes/' whileHover={{ scale: 1.05 }}>
                                 <div className='w-20 rounded-full overflow-hidden'>
                                     <Image
                                         src='/media/george_square.webp' // Route of the image file
@@ -48,7 +53,12 @@ export default function About() {
                                         layout='responsive'
                                     />
                                 </div>
-                                <h6 className='m-4'>George</h6>
+                                <div>
+                                    <h6 className='mx-2 text-md'>George</h6>
+                                    <h6 className='mx-2 text-sm'>808-256-8028</h6>
+                                    <h6 className='mx-2 text-sm'>george.bukes@compass.com</h6>
+                                    <h6 className='mx-2 text-sm'>DRE 01937149</h6>
+                                </div>
                             </motion.a>
                         </AnimatePresence>
                     </div>
